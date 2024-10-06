@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+/* border: 1px solid; */
+}
+
+
+
+.category{
+  top:-30px;
+  left:-10px
+}
+.user-letter{
+  border-radius: 50%;
+  height:5rem ;
+  width:5rem ;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.color-input{
+  border-radius: 50%;
+  height:2.5rem ;
+  width:2.5rem ;
+
+  margin-top: 0;
+
+}
+
+.input-container{
+  left:70%;
+  top:15%
+}
+
+.input-container p{
+  position: absolute;
+  top:-85%;
+  color: white;
+
+}
+
+.ellipses-text{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: horizontal;
+    overflow: hidden;
+}
+
+
+
+.due-date{
+  left: 0%;
+  bottom: 0%;
+  min-width:6.5rem; 
+
+  
+}
+
+.view{
+
+  right: 5%;
+  z-index: 100;
+  font-size: 15px;
+  position: absolute;
+  top:-170%;
+  cursor: pointer;
+  display: block;
+  min-width:6.5rem; 
+  text-align: center;
+}
+
+@media screen and (max-width:400px)  {
+  .input-task{
+    flex: 95%;
+  }
+
+  .input-side{
+    flex: 1%;
+  }
+
+  .category{
+    top:-30px;
+    left:20px
+  }
+
+  .due-date{
+    /* left: 0%; */
+    left:20px;
+
+    bottom: 0%;
+    min-width:6.5rem; 
+  
+    
+  }
+}
