@@ -15,4 +15,3 @@ function Root( ) {
 }
 
 export default Root
-maxphil058/react-firebase-todo-list
