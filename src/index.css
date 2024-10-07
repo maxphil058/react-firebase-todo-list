@@ -77,7 +77,7 @@
   text-align: center;
 }
 
-@media screen and (max-width:400px)  {
+@media screen and (max-width:770px)  {
   .input-task{
     flex: 95%;
   }

@@ -25,9 +25,9 @@ function App() {
             
             <Route path="sign-up" element={<SignUp/>} />
 
-            <Route path="todo" element={user?<ToDo/>:<Navigate to="/login"/>} />
+            <Route path="todo" element={loading?<p>Loading...</p> :user?<ToDo/>:<Navigate to="/login"/>} />
             
-            <Route path="task" element={ user?<Task/>:<Navigate to="/login"/>} />
+            <Route path="task" element={ loading?<p>Loading...</p> :user?<Task/>:<Navigate to="/login"/>} />
 
 
 
